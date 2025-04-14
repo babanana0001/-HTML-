@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的美食地圖</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f3d3aa;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .food-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .food-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+        }
+        .food-image {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #eee;
+        }
+        .food-info {
+            padding: 15px;
+        }
+        .restaurant-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .dish-name {
+            font-size: 1em;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .google-map-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .google-map-link a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .google-map-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<script src="main.js"></script>
+<body>
+    <h1>中央美食地圖</h1>
+
+    <div class="food-container">
+        <div class="food-card">
+            <img src="img/amu2.jpg" alt="阿米玲食堂-日式豬排專賣" class="food-image">
+            <div class="food-info">
+                <div class="restaurant-name">阿米玲食堂-日式豬排專賣</div>
+                <h2>炸豬排酥脆好吃，厚度很剛好！內用附贈檸檬水、味噌湯、小菜</h2>
+                <div class="dish-name">日式炸豬扒</div>
+                <div class="google-map-link">
+                    <a href="https://maps.app.goo.gl/DpVoRQKu3uMSbEZw6" target="_blank">查看地圖</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <img src="img/white.jpg" alt="白鬍子牛排 中央大學店" class="food-image">
+            <div class="food-info">
+                <div class="restaurant-name">白鬍子牛排 中央大學店</div>
+                <h2>平價版牛排，厚切很好吃，還可以免費加麵，有飲料、玉米濃湯、麵包等</h2>
+                <div class="dish-name">豬排</div>
+                <div class="google-map-link">
+                    <a href="https://maps.app.goo.gl/hUtDqxhMSrppoXtv9" target="_blank">查看地圖</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <img src="img/milu.jpg" alt="迷路義麵屋" class="food-image">
+            <div class="food-info">
+                <div class="restaurant-name">迷路義麵屋</div>
+                <h2>內用附紅茶、玉米濃湯，濃湯味道頗淡
+                    可免費加麵，價格親民份量夠
+                    </h2>
+                <div class="dish-name">草莓鮮奶油蛋糕</div>
+                <div class="google-map-link">
+                    <a href="https://maps.app.goo.gl/Tkb4z5b21tw7hHEZA" target="_blank">查看地圖</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
